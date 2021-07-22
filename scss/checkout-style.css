@@ -1,0 +1,324 @@
+/********var colors*****/
+/**************/
+body {
+  color: #222;
+}
+
+ul, li {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+/************/
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/***********header************/
+header .container > h1.text {
+  text-align: right;
+  margin: 140px 0px;
+  margin-bottom: 50px;
+  color: white;
+  font-size: 41px;
+  font-weight: 700;
+}
+
+header .container > div.links {
+  text-align: right;
+  color: white;
+  padding: 50px 0px;
+}
+
+header .container > div.links a {
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  header .container > div.links,
+  header .container > h1.text {
+    text-align: left;
+  }
+  header .container > h1.text {
+    margin-bottom: 0px;
+  }
+}
+
+/****************return and coupon content style****/
+.content-box {
+  margin: 100px 0px;
+}
+
+.content-box .container {
+  /*******coupon content*****/
+}
+
+.content-box .container h4 {
+  font-weight: 600;
+  font-size: 14px;
+  font-family: system-ui;
+  background-color: #e8f0f2;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.content-box .container .return-content p, .content-box .container .coupon-content p {
+  padding: 15px;
+  font-size: 14px;
+  color: grey;
+  letter-spacing: 0.7px;
+}
+
+.content-box .container .return-content p:last-of-type a, .content-box .container .coupon-content p:last-of-type a {
+  text-decoration: none;
+  color: grey;
+}
+
+.content-box .container .return-content form > input, .content-box .container .coupon-content form > input {
+  margin-left: 15px;
+  overflow: visible;
+  display: block;
+  color: grey;
+  width: 55%;
+  margin-right: 25px;
+  padding: 11px 9px;
+  outline-style: none;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+.content-box .container .return-content .diff-btn, .content-box .container .coupon-content .diff-btn {
+  display: inline-block;
+  outline-style: none;
+  padding: 8px 30px;
+  border: 0px;
+  color: white;
+  background-color: #ffba00;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  margin-left: 15px;
+}
+
+.content-box .container .return-content .diff-btn::before, .content-box .container .coupon-content .diff-btn::before {
+  position: absolute;
+  content: "";
+  width: 160px;
+  height: 40px;
+  top: 0px;
+  left: 165px;
+  -webkit-transform: skew(-35deg);
+          transform: skew(-35deg);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  background-color: #0000004a;
+}
+
+.content-box .container .return-content .diff-btn:hover::before, .content-box .container .coupon-content .diff-btn:hover::before {
+  left: -175px;
+}
+
+.content-box .container .return-content .remember, .content-box .container .coupon-content .remember {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.content-box .container .return-content .remember label, .content-box .container .coupon-content .remember label {
+  color: grey;
+  margin-left: 5px;
+}
+
+.content-box .container .coupon-content form button {
+  background-color: white;
+  border: 1px solid #eee;
+  margin-top: 20px;
+  padding: 10px 35px;
+  outline-style: none;
+  font-size: 14px;
+  font-weight: 500;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+.content-box .container .coupon-content form button:hover {
+  background-color: #ffba00;
+  color: white;
+}
+
+/*******grandparent section*******/
+.grandparent .container .row .col-md-12 {
+  /*******************/
+}
+
+.grandparent .container .row .col-md-12 .parent {
+  margin: 50px 0px;
+}
+
+.grandparent .container .row .col-md-12 .parent .billing, .grandparent .container .row .col-md-12 .parent .shipping {
+  margin: 40px 0px;
+}
+
+.grandparent .container .row .col-md-12 .parent .billing h4, .grandparent .container .row .col-md-12 .parent .shipping h4 {
+  font-size: 20px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #e8f0f2;
+  padding-bottom: 15px;
+  font-family: system-ui;
+}
+
+.grandparent .container .row .col-md-12 .parent .billing form > input, .grandparent .container .row .col-md-12 .parent .shipping form > input {
+  overflow: visible;
+  display: block;
+  color: grey;
+  width: 100%;
+  margin-right: 25px;
+  padding: 11px 9px;
+  outline-style: none;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+.grandparent .container .row .col-md-12 .parent .billing form select, .grandparent .container .row .col-md-12 .parent .shipping form select {
+  display: block;
+  width: 100%;
+  color: grey;
+  padding: 11px 9px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  outline-style: none;
+}
+
+.grandparent .container .row .col-md-12 .parent .billing form .creat, .grandparent .container .row .col-md-12 .parent .shipping form .creat {
+  margin-top: 15px;
+}
+
+.grandparent .container .row .col-md-12 .parent .billing form .creat label, .grandparent .container .row .col-md-12 .parent .shipping form .creat label {
+  color: grey;
+  margin-left: 5px;
+}
+
+.grandparent .container .row .col-md-12 .parent .billing textarea, .grandparent .container .row .col-md-12 .parent .shipping textarea {
+  margin-top: 15px;
+  height: 130px;
+  display: block;
+  width: 100%;
+  color: grey;
+  padding: 11px;
+  resize: none;
+  outline-style: none;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.grandparent .container .row .col-md-12 .order {
+  margin: 50px 0px;
+  background-color: #e5ecee;
+  padding: 30px;
+}
+
+.grandparent .container .row .col-md-12 .order h2 {
+  font-size: 21px;
+  font-family: sans-serif;
+}
+
+.grandparent .container .row .col-md-12 .order ul li {
+  margin: 7px 0px;
+}
+
+.grandparent .container .row .col-md-12 .order ul li a {
+  display: block;
+  border-bottom: 2px solid #eee;
+  color: grey;
+  padding: 10px 0px;
+  text-decoration: none;
+}
+
+.grandparent .container .row .col-md-12 .order ul li a span {
+  float: right;
+}
+
+.grandparent .container .row .col-md-12 .order ul.list2 li a {
+  color: #222;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.grandparent .container .row .col-md-12 .order ul.list2 li a span {
+  color: grey;
+}
+
+.grandparent .container .row .col-md-12 .order .pay-box {
+  margin: 20px 0px;
+}
+
+.grandparent .container .row .col-md-12 .order .pay-box .top label {
+  font-size: 14px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.grandparent .container .row .col-md-12 .order .pay-box p {
+  margin: 10px 0px;
+  padding: 10px;
+  background-color: white;
+  color: grey;
+  font-size: 15px;
+}
+
+.grandparent .container .row .col-md-12 .order .confirm label {
+  font-size: 14px;
+}
+
+.grandparent .container .row .col-md-12 .order button {
+  outline-style: none;
+  padding: 8px 30px;
+  border: 0px;
+  color: white;
+  background-color: #ffba00;
+  font-size: 16px;
+  display: block;
+  margin: auto;
+  width: 98%;
+  margin-top: 25px;
+  position: relative;
+  overflow: hidden;
+}
+
+.grandparent .container .row .col-md-12 .order button::before {
+  position: absolute;
+  content: "";
+  width: 160px;
+  height: 40px;
+  top: 0px;
+  left: 110%;
+  -webkit-transform: skew(-35deg);
+          transform: skew(-35deg);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  background-color: #0000004a;
+}
+
+.grandparent .container .row .col-md-12 .order button:hover::before {
+  left: -110%;
+}
+/*# sourceMappingURL=checkout-style.css.map */

@@ -1,0 +1,119 @@
+doctype html
+html(lang="en")
+  head
+    title Product Checkout 
+    include ../includes/head-content.pug
+    link(rel="stylesheet", href="../scss/checkout-style.css")
+  body
+    header
+      .container
+        include ../includes/navbar-content.pug
+        h1(class="text") Checkout
+        div(class="links") 
+          a(href="../index.html") Home 
+          span
+            i(class="ri-arrow-right-line") 
+          a(href="checkout.html") Checkout
+    //end of header
+    section.content-box
+      .container
+        .return-content
+          h4 Returning Customer ?
+          p If you have shopped with us before, please enter your details in the boxes below. If you are a new customer, please proceed to the Billing & Shipping section.
+          form
+            input(type="email",placeholder="Email*")
+            input(type="Password",placeholder="Password*")
+            br
+            button(type="submit", class="diff-btn") LOGIN
+            .remember
+              input(type="checkbox") 
+              label Remember me
+          p
+            a(href="") Lost your password ? 
+        //end of return content
+        .coupon-content
+          h4 Have a Coupon ?
+          form
+            input(type="text", placeholder="Enter Coupn Code")
+            button(type="submit") APPLY COUPON
+    //end of coupon-content
+    //end of content-box
+    section.grandparent
+      .container
+        .row
+          div(class="col-md-12 col-lg-8")
+            .parent
+              .billing
+                h4 Billing Details
+                form
+                  each val in ["First Name","Last Name","Company Name"]
+                    input(type="text", placeholder=val)
+                  input(type="number", placeholder="Phone Number")
+                  input(type="email", placeholder="Email Address")
+                  select
+                    option(value="") Country
+                    each val in ["Country1","Country2","Country3"]
+                      option(value="country")  #{val}
+                  each val in ["Address Line 01","Address Line 02","Town/City"]
+                    input(type="text", placeholder=val)
+                  select
+                    option(value="") District
+                    each val in ["District 1","District 2","District 3"]
+                      option(value="district") #{val}
+                  input(type="text", placeholder="PostCode/ZIP")
+                  .creat
+                    input(type="checkbox")
+                    label Creat an account ?
+              //start of shipping
+              .shipping
+                h4 Shipping Details
+                .creat
+                  input(type="checkbox")
+                  label  Ship to a different address?
+                  textarea(placeholder="Order Notes")
+          //start of order 
+          div(class="col-md-12 col-lg-4")
+            .order
+              h2 Your Order
+              ul(class="list1")
+                li
+                  a(href="") Product
+                    span Total 
+                li
+                  a(href="") Fresh Blackberry
+                    span $720.00
+                li
+                  a(href="") Fresh Tomatoes
+                    span $430.00
+                li
+                  a(href="") Fresh Brocoli
+                    span $180.00
+                li
+                  a(href="") Product
+                    span Total 
+              ul(class="list2")
+                li
+                  a(href="") SUBTOTAL
+                    span $1210.00
+                li
+                  a(href="") SHIPPING
+                    span Flat Rate : $50.00
+                li
+                  a(href="") TOTAL
+                    span $24410.00
+              .pay-box
+                .top
+                  input(type="checkbox")
+                  label CHECK PAYMENTS 
+                p Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.
+              .pay-box
+                .top
+                  input(type="checkbox")
+                  label PAYPAL 
+                p Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.
+              .confirm
+                input(type="checkbox")
+                label I have read Terms&Conditions
+              button(type="submit") PROCEED TO PAYBAL
+    include ../includes/footer-content.pug
+

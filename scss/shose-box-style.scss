@@ -1,0 +1,125 @@
+ul{
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+$primary:#222;
+$second:#ffba00;
+$dark-gray:#777;
+$light-gray:#ccc;
+.price{
+  span{
+    font-size: 15px;
+    font-family: sans-serif;
+  }
+  span:last-of-type{
+    text-decoration: line-through;
+    color: #ccc;
+    margin-left: 7px;
+  }
+}
+.add-bag{
+  display: flex;
+  a.add-btn{
+    width: 40px;
+    height: 40px;
+    padding-top: 1px;
+    padding-left: 9px;
+    background: linear-gradient(90deg,#ffba00 0%,#ff6c00 100%);
+    color: white;
+    border-radius: 50%;
+    i{
+      font-size: 25px;            
+    }
+  }
+  span{
+    font-size: 12px;
+    font-family: -webkit-pictograph;
+    font-weight: 600;
+    align-self: center;
+    padding-left: 10px;
+    color: $primary;
+  }
+}
+/**************/
+.col-sm-12{
+  .box{
+    margin-bottom: 30px;
+    .pic{
+      img{
+        width: 100%;
+      }
+    }
+    .text{
+      h6{
+        font-size: 17px;
+        font-family: monospace;
+        text-transform: uppercase;
+        line-height: 1.5;
+        letter-spacing: 1;
+        margin: 7px 0px;
+        font-weight: 600;
+      }
+      .price{
+        span{
+          font-size: 15px;
+          font-family: sans-serif;
+        }
+        span:last-of-type{
+          text-decoration: line-through;
+          color: #ccc;
+          margin-left: 7px;
+        }
+      }
+      .operations{
+        margin-top: 15px;
+        a{
+          display: inline-block;
+          margin: 5px 0px;
+          text-decoration: none;
+          span{
+            position: relative;
+            background: #828bb2;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            padding-left: 6px;
+            padding-top: 2px;                    font-size: 18px;
+            font-weight: 100;
+            border-radius: 50%;
+            color: white;
+            transition: 0.3s all;
+            p{
+              visibility: hidden;
+              position: absolute;
+              margin: 0px;
+              top: 8px;
+              left: 18px;
+              font-size: 11px;
+              font-weight: 600;
+              width: 74px;
+              z-index: 10;
+              font-family: sans-serif;
+              transition: 0.3s all;
+              color: $primary;
+            }
+            &:hover{
+              margin-right: 67px;
+              background: linear-gradient(90deg,#ffba00 0%,#ff6c00 100%);
+            }
+            &:hover p{
+              visibility: visible;
+              left: 32px;
+              padding-left:3px ;
+              padding-top: 2px ;
+              padding-bottom: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+/********var colors*****/
+/**************/
+body {
+  color: #222;
+}
+
+ul, li {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/***********header************/
+header .container > h1.text {
+  text-align: right;
+  margin: 140px 0px;
+  margin-bottom: 50px;
+  color: white;
+  font-size: 41px;
+  font-weight: 700;
+}
+
+header .container > div.links {
+  text-align: right;
+  color: white;
+  padding: 50px 0px;
+}
+
+header .container > div.links a {
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  header .container > div.links,
+  header .container > h1.text {
+    text-align: left;
+  }
+  header .container > h1.text {
+    margin-bottom: 0px;
+  }
+}
+
+/**************************/
+.parent {
+  margin: 100px 0px;
+}
+
+.parent .container {
+  /********order*******/
+}
+
+.parent .container > p {
+  text-align: center;
+  color: #28d500;
+  margin: 40px 0px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.parent .container .middle {
+  margin: 90px 0px;
+}
+
+.parent .container .middle .row .col-md-12 .box h4 {
+  padding: 10px 0px;
+  border-bottom: 1px solid #ddd;
+  font-size: 20px;
+}
+
+.parent .container .middle .row .col-md-12 .box .info {
+  margin: 15px 0px;
+  color: #777;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.parent .container .middle .row .col-md-12 .box .info span {
+  color: #222;
+  float: right;
+}
+
+.parent .container .order {
+  margin: 50px 0px;
+  background-color: #e5ecee;
+  padding: 40px 50px;
+}
+
+.parent .container .order h2 {
+  font-size: 21px;
+  font-family: sans-serif;
+}
+
+.parent .container .order ul li {
+  margin: 7px 0px;
+}
+
+.parent .container .order ul li a {
+  display: block;
+  border-top: 2px solid #eee;
+  color: grey;
+  padding: 10px 0px;
+  text-decoration: none;
+}
+
+.parent .container .order ul li a span {
+  float: right;
+}
+
+.parent .container .order ul.list2 li a {
+  color: #222;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.parent .container .order ul.list2 li a span {
+  color: grey;
+}
+/*# sourceMappingURL=confirmation-style.css.map */

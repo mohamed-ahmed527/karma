@@ -1,0 +1,22 @@
+section.deals
+  .title 
+    h1 Deals of the Week
+    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  .container
+    .row 
+      div(class="col-12 col-lg-9")
+        .content 
+          .row 
+            - for(var x=1; x<=9; x++)
+                div(class="col-12 col-sm-6 col-md-4")
+                  .box
+                    .pic 
+                      img(src="../assets/deal_img1.webp")
+                    .text
+                      h6 BLACK LACK HEALS
+                      .price 
+                        span $150 
+                        span $210      
+      div(class="col-8 col-md-6 col-lg-3")
+        .right
+          img(src="../assets/img5.jpg")

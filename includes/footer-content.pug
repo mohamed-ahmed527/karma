@@ -1,0 +1,31 @@
+footer
+  .container
+    .row
+      div(class="col-12 col-sm-6 col-lg-3")
+        .box
+          h6 About Us
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
+      div(class="col-12 col-sm-6 col-lg-3")
+        .box
+          h6 Newsletter
+          p Stay update with our latest
+          div(class="email")
+            input(type="email", placeholder="Enter Your Email")
+            button
+              i(class="ri-arrow-right-line")
+      div(class="col-12 col-sm-6 col-lg-3")
+        .box
+          h6 Instagram Feed
+          p Stay update with our latest
+          div(class="insta")
+            - for (var x=1 ; x <= 8 ; x++)
+              .pic 
+                img(src="../assets/insta"+x+".webp")
+      div(class="col-12 col-sm-6 col-lg-3")
+        .box
+          h6 Follow Us
+          p Let us be social
+          div(class="social")
+            each val in ["ri-facebook-fill","ri-twitter-fill","ri-behance-fill","ri-instagram-fill"]
+              span 
+                i(class=val)

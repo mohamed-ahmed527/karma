@@ -1,0 +1,139 @@
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.price span {
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+.price span:last-of-type {
+  text-decoration: line-through;
+  color: #ccc;
+  margin-left: 7px;
+}
+
+.add-bag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.add-bag a.add-btn {
+  width: 40px;
+  height: 40px;
+  padding-top: 1px;
+  padding-left: 9px;
+  background: -webkit-gradient(linear, left top, right top, from(#ffba00), to(#ff6c00));
+  background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+  color: white;
+  border-radius: 50%;
+}
+
+.add-bag a.add-btn i {
+  font-size: 25px;
+}
+
+.add-bag span {
+  font-size: 12px;
+  font-family: -webkit-pictograph;
+  font-weight: 600;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 10px;
+  color: #222;
+}
+
+/**************/
+.col-sm-12 .box {
+  margin-bottom: 30px;
+}
+
+.col-sm-12 .box .pic img {
+  width: 100%;
+}
+
+.col-sm-12 .box .text h6 {
+  font-size: 17px;
+  font-family: monospace;
+  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: 1;
+  margin: 7px 0px;
+  font-weight: 600;
+}
+
+.col-sm-12 .box .text .price span {
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+.col-sm-12 .box .text .price span:last-of-type {
+  text-decoration: line-through;
+  color: #ccc;
+  margin-left: 7px;
+}
+
+.col-sm-12 .box .text .operations {
+  margin-top: 15px;
+}
+
+.col-sm-12 .box .text .operations a {
+  display: inline-block;
+  margin: 5px 0px;
+  text-decoration: none;
+}
+
+.col-sm-12 .box .text .operations a span {
+  position: relative;
+  background: #828bb2;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  padding-left: 6px;
+  padding-top: 2px;
+  font-size: 18px;
+  font-weight: 100;
+  border-radius: 50%;
+  color: white;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.col-sm-12 .box .text .operations a span p {
+  visibility: hidden;
+  position: absolute;
+  margin: 0px;
+  top: 8px;
+  left: 18px;
+  font-size: 11px;
+  font-weight: 600;
+  width: 74px;
+  z-index: 10;
+  font-family: sans-serif;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  color: #222;
+}
+
+.col-sm-12 .box .text .operations a span:hover {
+  margin-right: 67px;
+  background: -webkit-gradient(linear, left top, right top, from(#ffba00), to(#ff6c00));
+  background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+}
+
+.col-sm-12 .box .text .operations a span:hover p {
+  visibility: visible;
+  left: 32px;
+  padding-left: 3px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+/*# sourceMappingURL=shose-box-style.css.map */

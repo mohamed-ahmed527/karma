@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Product Checkout </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="stylesheet" href="../scss/style.css">
+    <link rel="stylesheet" href="../scss/mediaquery.css">
+    <link rel="shotcut icon" href="../assets/icon.webp" width="100px">
+    <link rel="stylesheet" href="../scss/shose-box-style.css">
+    <link rel="stylesheet" href="../scss/checkout-style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="container">
+            <div class="logo"><img src="../assets/logo.webp"></div>
+            <div class="list">
+              <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li class="inside_list"><a href="#">SHOP</a>
+                  <ul>
+                    <li><a href="../pug-file/shop-category.html">SHOP CATEGORY</a></li>
+                    <li><a href="../pug-file/product-details.html">PRODUCT DETAILS</a></li>
+                    <li><a href="../pug-file/checkout.html">PRODUCT CHECKOUT</a></li>
+                    <li><a href="../pug-file/shopping-cart.html">SHOPING CART</a></li>
+                    <li><a href="../pug-file/confirmation.html">CONFIRMATION</a></li>
+                  </ul>
+                </li>
+                <li class="inside_list"><a href="#">BLOG</a>
+                  <ul> 
+                    <li> <a href="../pug-file/blog.html">BLOG</a></li>
+                    <li> <a href="#">BLOG DETAILS</a></li>
+                  </ul>
+                </li>
+                <li class="inside_list"><a href="#">PAGES</a>
+                  <ul> 
+                    <li> <a href="../pug-file/login.html">LOGIN </a></li>
+                    <li> <a href="../pug-file/tracking.html">TRACKING</a></li>
+                    <li> <a href="#">ELEMENTS </a></li>
+                  </ul>
+                </li>
+                <li><a href="../pug-file/contact.html">CONTACT</a></li>
+              </ul>
+            </div>
+            <div class="extension">
+              <ul> 
+                <li> <a href="#"><span><i class="ri-briefcase-3-line"></i></span></a></li>
+                <li> <a href="#"><span><i class="ri-search-line"></i></span></a></li>
+              </ul>
+            </div>
+            <span class="menu"><i class="ri-menu-3-line"></i></span>
+          </div>
+        </nav>
+        <h1 class="text">Checkout</h1>
+        <div class="links"> <a href="../index.html">Home </a><span><i class="ri-arrow-right-line"> </i></span><a href="checkout.html">Checkout</a></div>
+      </div>
+    </header>
+    <!--end of header-->
+    <section class="content-box">
+      <div class="container">
+        <div class="return-content">
+          <h4>Returning Customer ?</h4>
+          <p>If you have shopped with us before, please enter your details in the boxes below. If you are a new customer, please proceed to the Billing & Shipping section.</p>
+          <form>
+            <input type="email" placeholder="Email*">
+            <input type="Password" placeholder="Password*"><br>
+            <button class="diff-btn" type="submit">LOGIN</button>
+            <div class="remember">
+              <input type="checkbox">
+              <label>Remember me</label>
+            </div>
+          </form>
+          <p><a href="">Lost your password ? </a></p>
+        </div>
+        <!--end of return content-->
+        <div class="coupon-content">
+          <h4>Have a Coupon ?</h4>
+          <form>
+            <input type="text" placeholder="Enter Coupn Code">
+            <button type="submit">APPLY COUPON</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!--end of coupon-content-->
+    <!--end of content-box-->
+    <section class="grandparent">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-8">
+            <div class="parent">
+              <div class="billing">
+                <h4>Billing Details</h4>
+                <form>
+                  <input type="text" placeholder="First Name">
+                  <input type="text" placeholder="Last Name">
+                  <input type="text" placeholder="Company Name">
+                  <input type="number" placeholder="Phone Number">
+                  <input type="email" placeholder="Email Address">
+                  <select>
+                    <option value="">Country</option>
+                    <option value="country"> Country1</option>
+                    <option value="country"> Country2</option>
+                    <option value="country"> Country3</option>
+                  </select>
+                  <input type="text" placeholder="Address Line 01">
+                  <input type="text" placeholder="Address Line 02">
+                  <input type="text" placeholder="Town/City">
+                  <select>
+                    <option value="">District</option>
+                    <option value="district">District 1</option>
+                    <option value="district">District 2</option>
+                    <option value="district">District 3</option>
+                  </select>
+                  <input type="text" placeholder="PostCode/ZIP">
+                  <div class="creat">
+                    <input type="checkbox">
+                    <label>Creat an account ?</label>
+                  </div>
+                </form>
+              </div>
+              <!--start of shipping-->
+              <div class="shipping">
+                <h4>Shipping Details</h4>
+                <div class="creat">
+                  <input type="checkbox">
+                  <label> Ship to a different address?</label>
+                  <textarea placeholder="Order Notes"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--start of order -->
+          <div class="col-md-12 col-lg-4">
+            <div class="order">
+              <h2>Your Order</h2>
+              <ul class="list1">
+                <li><a href="">Product<span>Total </span></a></li>
+                <li><a href="">Fresh Blackberry<span>$720.00</span></a></li>
+                <li><a href="">Fresh Tomatoes<span>$430.00</span></a></li>
+                <li><a href="">Fresh Brocoli<span>$180.00</span></a></li>
+                <li><a href="">Product<span>Total </span></a></li>
+              </ul>
+              <ul class="list2">
+                <li><a href="">SUBTOTAL<span>$1210.00</span></a></li>
+                <li><a href="">SHIPPING<span>Flat Rate : $50.00</span></a></li>
+                <li><a href="">TOTAL<span>$24410.00</span></a></li>
+              </ul>
+              <div class="pay-box">
+                <div class="top">
+                  <input type="checkbox">
+                  <label>CHECK PAYMENTS </label>
+                </div>
+                <p>Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+              </div>
+              <div class="pay-box">
+                <div class="top">
+                  <input type="checkbox">
+                  <label>PAYPAL </label>
+                </div>
+                <p>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.</p>
+              </div>
+              <div class="confirm">
+                <input type="checkbox">
+                <label>I have read Terms&Conditions</label>
+              </div>
+              <button type="submit">PROCEED TO PAYBAL</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="box">
+              <h6>About Us</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="box">
+              <h6>Newsletter</h6>
+              <p>Stay update with our latest</p>
+              <div class="email">
+                <input type="email" placeholder="Enter Your Email">
+                <button><i class="ri-arrow-right-line"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="box">
+              <h6>Instagram Feed</h6>
+              <p>Stay update with our latest</p>
+              <div class="insta">
+                <div class="pic"> <img src="../assets/insta1.webp"></div>
+                <div class="pic"> <img src="../assets/insta2.webp"></div>
+                <div class="pic"> <img src="../assets/insta3.webp"></div>
+                <div class="pic"> <img src="../assets/insta4.webp"></div>
+                <div class="pic"> <img src="../assets/insta5.webp"></div>
+                <div class="pic"> <img src="../assets/insta6.webp"></div>
+                <div class="pic"> <img src="../assets/insta7.webp"></div>
+                <div class="pic"> <img src="../assets/insta8.webp"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="box">
+              <h6>Follow Us</h6>
+              <p>Let us be social</p>
+              <div class="social"><span> <i class="ri-facebook-fill"></i></span><span> <i class="ri-twitter-fill"></i></span><span> <i class="ri-behance-fill"></i></span><span> <i class="ri-instagram-fill"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

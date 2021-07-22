@@ -1,0 +1,42 @@
+doctype html 
+html(lang="en")
+  head 
+    title LOGIN 
+    include ../includes/head-content.pug
+    link(rel="stylesheet", href="../scss/login.css")
+  body
+    header 
+      .container 
+        include ../includes/navbar-content.pug
+        h1(class="text") LOGIN Page
+        div(class="links") 
+          a(href="../index.html") Home 
+          span
+            i(class="ri-arrow-right-line") 
+          a(href="login.html") login/Register
+    //end of header
+    .login
+      .container
+        .row
+          div(class="col-md-12 col-lg-6")
+            .pic
+              img(src="../assets/login.webp")
+              .text
+                .info
+                  h4 New to our website?
+                  p There are advances being made in science and technology everyday, and a good example of this is the
+                  button(class="diff-btn") CREATE AN ACCOUNT
+          div(class="col-md-12 col-lg-6")
+            form
+              h4 LOG IN TO ENTER
+              input(type="text",placeholder="Username")
+              input(type="Password",placeholder="Password")
+              .keep
+                input(type="checkbox")
+                label Keep me logged in
+              button(type="submit",class="diff-btn") LOG IN
+              p
+                a(href="") Forgot password?
+    //end of login section
+    include ../includes/footer-content.pug
+

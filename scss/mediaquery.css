@@ -1,0 +1,69 @@
+@media screen and (max-width: 992px) {
+  header .container nav .container .menu {
+    display: block;
+  }
+  header .container nav .container .list,
+  header .container nav .container .extension {
+    width: 100%;
+    overflow: hidden;
+    float: none;
+    display: none;
+  }
+  header .container nav .container .list ul,
+  header .container nav .container .extension ul {
+    width: 100%;
+    text-align: left;
+    display: block;
+  }
+  header .container nav .container .list ul li,
+  header .container nav .container .extension ul li {
+    line-height: 3;
+    width: 100%;
+  }
+  header .container nav .container .list > ul li.inside_list ul,
+  header .container nav .container .extension > ul li.inside_list ul {
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding-left: 30px;
+  }
+  header .container nav .container .list > ul li.inside_list ul li,
+  header .container nav .container .extension > ul li.inside_list ul li {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+  }
+  header .container nav .container .extension ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 766px) {
+  .sneakers .container .row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .container nav .container .logo {
+    width: 20%;
+    margin-bottom: 7px;
+  }
+  header .container nav .container .menu {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 766px) and (max-width: 993px) {
+  header .container nav .container .menu {
+    top: 4px;
+  }
+  header .container nav .container .logo {
+    width: 17%;
+    margin-bottom: 7px;
+  }
+}
+/*# sourceMappingURL=mediaquery.css.map */

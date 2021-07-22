@@ -1,0 +1,83 @@
+doctype html
+html(lang="en")
+  head
+    title shop category
+    include ../includes/head-content.pug
+    link(rel="stylesheet", href="../scss/shop-category-style.css")
+  body
+    header
+      .container
+        include ../includes/navbar-content.pug
+        h1(class="text") Shop Category Page
+        div(class="links") 
+          a(href="../index.html") Home 
+          span
+            i(class="ri-arrow-right-line") 
+          a(href="shop-category.html") Shop 
+          span
+            i(class="ri-arrow-right-line") 
+          a(href="shop-category.html") Fashon category 
+    //end of header
+    section(class="content")
+      .container
+        .row
+          div(class="col-md-12 col-lg-3")
+            .brows
+              .list1
+                h1 Browse Categories
+                ul
+                  li Fruits and Vegetables(53)
+                  li Meat and Fish(53)
+                  li Cooking(53)
+                  li Beverages(24)
+                  li Home and Cleaning(53)
+                  li Pest Control(24)
+                  li Office Products(77)
+                  li Beauty Products(65)
+                  li Health Products(29)
+                  li Pet Care(29)
+              .list2
+                h1 Product Filters
+                .brands
+                  h2 Brands
+                  ul
+                    each val in ["Apple(29)", "Asus(29)", "Gionee(19)", "Micromax(19)", "Samsung(19)"]
+                      li
+                        input(type="radio", name="brand") 
+                        label(for="appel") #{val}  
+                .select_color
+                  h2 Color
+                  ul
+                    each val in ["Black(29)", "Black Leather(29)", "Black with red(19)","Gold(19)" , "Spacegrey(19)"]
+                      li
+                        input(type="radio", name="color") 
+                        label(for="appel") #{val} 
+                .select_price
+                  h2 Price 
+                  p Price : 
+                    span $500.00 to $4000.00
+          //right section
+          div(class="col-md-12 col-lg-9")
+            .right
+              .top
+                select(name="sort")
+                  each val in ["Default sorting", "Default sorting1", "Default sorting2"]
+                    option(value="sort") #{val}
+                select(name="show")
+                  each val in ["Show12","Show12","Show12"]
+                    option(value="show") #{val}
+                ul 
+                  li
+                    i(class="ri-arrow-left-line")
+                  each val in [1,2,3,4,5]
+                    li 
+                      a(href="#") #{val}
+                  li
+                    i(class="ri-arrow-right-line")
+              //content
+              .parent 
+                include ../includes/shose-box.pug 
+
+    include ../includes/deals-content.pug    
+    include ../includes/footer-content.pug
+    include ../includes/scriptes.pug

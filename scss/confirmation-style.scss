@@ -1,0 +1,127 @@
+/********var colors*****/
+$primary:#222;
+$second:#ffba00;
+$dark-gray:#777;
+$light-gray:#ccc;
+$light-blue: #828bb3;
+$second-light-gray:#e8f0f2;
+/**************/
+body{
+  color: $primary;
+}
+ul, li{
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+/***********header************/
+header{
+  .container{
+    >h1.text{
+      text-align: right;
+      margin: 140px 0px;
+      margin-bottom: 50px;
+      color: white;
+      font-size: 41px;
+      font-weight: 700;
+    }
+    >div.links{
+      text-align: right;
+      color: white;
+      padding: 50px 0px;
+      a{
+        color: white;
+      }
+    }
+  }
+}
+@media (max-width: 1200px){
+  header .container > div.links,
+  header .container >h1.text{
+    text-align: left;
+  }
+  header .container > h1.text{
+    margin-bottom: 0px;
+  }
+}
+/**************************/
+.parent{
+  margin: 100px 0px;
+  .container{
+    >p{
+      text-align: center;
+      color: #28d500;
+      margin: 40px 0px;
+      font-size: 20px;
+      font-weight: 500;
+    }
+    .middle{
+      margin: 90px 0px;
+      .row{
+        .col-md-12{
+          .box{
+            h4{
+              padding: 10px 0px;
+              border-bottom: 1px solid #ddd;
+              font-size: 20px;
+            }
+            .info{
+              margin: 15px 0px;
+              color: $dark-gray;
+              font-size: 14px;
+              font-family: sans-serif;
+              span{
+                color: $primary;
+                float: right;
+              }
+            }
+          }
+        }
+      }
+    }
+    /********order*******/
+    .order{
+      margin: 50px 0px;
+      background-color: #e5ecee;
+      padding: 40px 50px;
+      h2{
+        font-size: 21px;
+        font-family: sans-serif;
+      }
+      ul{
+        li{
+          margin: 7px 0px;
+          a{
+            display: block;
+            border-top: 2px solid #eee;
+            color: grey;
+            padding: 10px 0px;
+            text-decoration: none;
+            span{
+              float:right;
+            }
+          }
+        }
+      }
+      ul.list2{
+        li{
+          a{
+            color: $primary;
+            font-weight: 500;
+            font-size: 14px;
+            span{
+              color: grey;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

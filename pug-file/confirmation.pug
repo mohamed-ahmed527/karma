@@ -1,0 +1,86 @@
+doctype html
+html(lang="en")
+  head
+    title Confirmation 
+    include ../includes/head-content.pug
+    link(rel="stylesheet", href="../scss/confirmation-style.css")
+  body
+    header
+      .container
+        include ../includes/navbar-content.pug
+        h1(class="text") Confirmation
+        div(class="links") 
+          a(href="../index.html") Home 
+          span
+            i(class="ri-arrow-right-line") 
+          a(href="Confirmation.html") Confirmation
+    //end of header
+    .parent
+      .container
+        p Thank you. Your order has been received.
+        .middle
+          .row
+            div(class="col-md-12 col-lg-4")
+              .box
+                h4 Order Info
+                .info Order Number 
+                  span :60257 
+                .info Date 
+                  span :Los Angeles 
+                .info  Total
+                  span :USD 4503 
+                .info Payment Method 
+                  span :Check Payments
+            div(class="col-md-12 col-lg-4")
+              .box
+                h4 Billing Address
+                .info Street 
+                  span :56/8
+                .info City
+                  span :Los Angeles 
+                .info  Country
+                  span :United States
+                .info PostCode 
+                  span :32590
+            div(class="col-md-12 col-lg-4")
+              .box
+                h4 Shipping Address
+                .info Street 
+                  span :56/8
+                .info City
+                  span :Los Angeles 
+                .info  Country
+                  span :United States
+                .info PostCode 
+                  span :32590
+        //end of middle
+        .order
+          h2 Your Order
+          ul(class="list1")
+            li
+              a(href="") Product
+                span Total 
+            li
+              a(href="") Fresh Blackberry
+                span $720.00
+            li
+              a(href="") Fresh Tomatoes
+                span $430.00
+            li
+              a(href="") Fresh Brocoli
+                span $180.00
+            li
+              a(href="") Product
+                span Total 
+          ul(class="list2")
+            li
+              a(href="") SUBTOTAL
+                span $1210.00
+            li
+              a(href="") SHIPPING
+                span Flat Rate : $50.00
+            li
+              a(href="") TOTAL
+                span $24410.00
+    //end of parent
+    include ../includes/footer-content.pug

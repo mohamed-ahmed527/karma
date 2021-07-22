@@ -1,0 +1,45 @@
+doctype html
+html(lang="en")
+  head
+    title Shopping Cart 
+    include ../includes/head-content.pug
+    link(rel="stylesheet", href="../scss/shopping-cart.css")
+  body
+    header
+      .container
+        include ../includes/navbar-content.pug
+        h1(class="text") Shopping Cart
+        div(class="links") 
+          a(href="../index.html") Home 
+          span
+            i(class="ri-arrow-right-line") 
+          a(href="shopping-cart.html") Cart
+    //end of header
+    .container
+      table
+        thead
+          tr
+            th Product 
+            th Price
+            th Quantity
+            th Total
+        tbody
+          - for(x=1; x<=4 ; x++)
+            tr
+              td
+                .pic
+                  img(src="../assets/cart.webp")
+                |Minimalistic shop for multipurpose use
+              td $350.00
+              td 
+                .count 
+                  input(type="text", name="qty", id="sst", maxlength="12", value="1", title="Quantity:", class="input-text qty")
+                  button.plus
+                    i(class="ri-arrow-up-s-line")
+                  button.minus
+                    i(class="ri-arrow-down-s-line")
+              td $750.00   
+    //end of table
+    include ../includes/footer-content.pug
+    include ../includes/scriptes.pug
+    script(src="../jquery/product-details.js") 

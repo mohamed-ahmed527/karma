@@ -1,0 +1,143 @@
+doctype html 
+html(lang="en")
+  head 
+    title Product Details 
+    include ../includes/head-content.pug
+    link(rel="stylesheet", href="../scss/product-details.css")
+  body
+    header 
+      .container 
+        include ../includes/navbar-content.pug
+        h1(class="text") Product Details Page
+        div(class="links") 
+          a(href="../index.html") Home 
+          span
+            i(class="ri-arrow-right-line") 
+          a(href="product-details.html") Shop 
+          span
+            i(class="ri-arrow-right-line") 
+          a(href="product-details.html") Product Details
+    //content-section
+    .content-box
+      .container 
+        .row 
+          div(class="col-md-12 col-lg-6")
+            .pic 
+              img(src="../assets/header-shose.jpg")
+              div
+              div
+              div
+          div(class="col-md-12 col-lg-6")
+            .text
+              h2 Faded SkyBlu Denim Jeans
+              h3 $149.99
+              p Category      : Household
+              p Availibility  : In Stock
+              p.explain Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter.
+              .count 
+                label Quantity  
+                input(type="text", name="qty", id="sst", maxlength="12", value="1", title="Quantity:", class="input-text qty")
+                button.plus
+                  i(class="ri-arrow-up-s-line")
+                button.minus
+                  i(class="ri-arrow-down-s-line")
+              .cart
+                button.btn-cart  ADD TO CART
+                span
+                  i(class="ri-vip-diamond-line")  
+                span
+                  i(class="ri-heart-3-line")  
+    //list-parent
+    .list-parent
+      .container 
+        section(class="list") 
+          ul(id="my-tabs")
+            li
+              a(class="inactive",id="tab1") Description
+            li
+              a(id="tab2") Specification
+            li
+              a(id="tab3") Comments
+            li
+              a(id="tab4") Reviews
+        div(id="tab1-content", class="description-content")
+          p Beryl Cook is one of Britain’s most talented and amusing artists .Beryl’s pictures feature women of all shapes and sizes enjoying themselves .Born between the two world wars, Beryl Cook eventually left Kendrick School in Reading at the age of 15, where she went to secretarial school and then into an insurance office. After moving to London and then Hampton, she eventually married her next door neighbour from Reading, John Cook. He was an officer in the Merchant Navy and after he left the sea in 1956, they bought a pub for a year before John took a job in Southern Rhodesia with a motor company. Beryl bought their young son a box of watercolours, and when showing him how to use it, she decided that she herself quite enjoyed painting. John subsequently bought her a child’s painting set for her birthday and it was with this that she produced her first significant work, a half-length portrait of a dark-skinned lady with a vacant expression and large drooping breasts. It was aptly named ‘Hangover’ by Beryl’s husband and
+          p It is often frustrating to attempt to plan meals that are designed for one. Despite this fact, we are seeing more and more recipe books and Internet websites that are dedicated to the act of cooking for one. Divorce and the death of spouses or grown children leaving for college are all reasons that someone accustomed to cooking for more than one would suddenly need to learn how to adjust all the cooking practices utilized before into a streamlined plan of cooking that is more efficient for one person creating less
+        div(id="tab2-content", class="specification-content")
+          table 
+            tbody 
+              tr
+                td Width
+                td 128cm
+              tr
+                td  Height
+                td  508cm
+              tr
+                td  Depth 
+                td  85cm
+              tr
+                td  Weight 
+                td  52gm
+              tr
+                td  Quality checking
+                td  yes
+              tr
+                td Freshness Duration
+                td 03days
+              tr
+                td When packeting
+                td Without touch of hand
+              tr
+                td Each Box contains
+                td 60pcs
+        div(id="tab3-content", class="comment-content")
+          .row
+            div(class="col-md-12 col-lg-6")
+              - for (x=1; x<=3 ; x++)
+                .box
+                  .top
+                    .pic 
+                      img(src="../assets/comment1.webp")
+                    .text
+                      .title
+                        h4 Blake Ruiz 
+                        h5 12th Feb, 2018 at 05:56 pm
+                      a(href="") Reply
+                  .bottom
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            div(class="col-md-12 col-lg-6")
+              form
+                h4 Post a comment
+                input(type="text" , name="name" placeholder="Full Name")
+                input(type="email" , name="email" placeholder="Email Adress")
+                input(type="number" , name="phone" placeholder="Phone Number")
+                textarea(placeholder="Message")
+                button(type="submit") SUBMIT NOW 
+        div(id="tab4-content", class="review-content")
+          .row
+            div(class="col-md-12 col-lg -6")
+              - for (x=1; x<=3 ; x++)
+                .box
+                  .top
+                    .pic 
+                      img(src="../assets/comment1.webp")
+                    .text
+                      .title
+                        h4 Blake Ruiz 
+                        h5 12th Feb, 2018 at 05:56 pm
+                      a(href="") Reply
+                  .bottom
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            div(class="col-md-12 col-lg-6")
+              form
+                h4 Post a comment
+                input(type="text" , name="name" placeholder="Full Name")
+                input(type="email" , name="email" placeholder="Email Adress")
+                input(type="number" , name="phone" placeholder="Phone Number")
+                textarea(placeholder="Message")
+                button(type="submit") SUBMIT NOW 
+  
+  include ../includes/deals-content.pug
+  include ../includes/footer-content.pug
+  include ../includes/scriptes.pug
+  script(src="../jquery/product-details.js")

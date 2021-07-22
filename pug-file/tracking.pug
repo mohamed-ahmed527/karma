@@ -1,0 +1,26 @@
+doctype html 
+html(lang="en")
+  head 
+    title tracking 
+    include ../includes/head-content.pug
+    link(rel="stylesheet", href="../scss/tracking.css")
+  body
+    header 
+      .container 
+        include ../includes/navbar-content.pug
+        h1(class="text") tracking Page
+        div(class="links") 
+          a(href="../index.html") Home 
+          span
+            i(class="ri-arrow-right-line") 
+          a(href="tracking.html") tracking
+    //end of header
+    .content
+      .container
+        p To track your order please enter your Order ID in the box below and press the "Track" button. This was given to you on your receipt and in the confirmation email you should have received.
+        form
+          input(type="text", placeholder="Order ID")
+          input(type="Email", placeholder="Billing Email Address")
+          button(type="submit",class="diff-btn") TRACK ORDER
+    //end od content
+    include ../includes/footer-content.pug

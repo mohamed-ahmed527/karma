@@ -1,0 +1,94 @@
+/********var colors*****/
+/**************/
+body {
+  color: #222;
+}
+
+/************/
+/***********header************/
+header .container > h1.text {
+  text-align: right;
+  margin: 140px 0px;
+  margin-bottom: 50px;
+  color: white;
+  font-size: 41px;
+  font-weight: 700;
+}
+
+header .container > div.links {
+  text-align: right;
+  color: white;
+  padding: 50px 0px;
+}
+
+header .container > div.links a {
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  header .container > div.links,
+  header .container > h1.text {
+    text-align: left;
+  }
+  header .container > h1.text {
+    margin-bottom: 0px;
+  }
+}
+
+/*********************/
+.content {
+  margin: 100px 0px;
+}
+
+.content .container p {
+  width: 90%;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 1.2px;
+  font-weight: 500;
+}
+
+.content .container form {
+  width: 70%;
+}
+
+.content .container form input {
+  display: block;
+  width: 100%;
+  margin: 20px 0px;
+  border: 1px solid #eee;
+  padding: 10px 7px;
+  outline-style: none;
+}
+
+.content .container form .diff-btn {
+  margin: 20px auto;
+  outline-style: none;
+  padding: 8px 30px;
+  border: 0px;
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#ffba00), to(#ff6c00));
+  background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.content .container form .diff-btn::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 115%;
+  -webkit-transform: skew(-35deg);
+          transform: skew(-35deg);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  background-color: #0000004a;
+}
+
+.content .container form .diff-btn:hover::before {
+  left: -115%;
+}
+/*# sourceMappingURL=tracking.css.map */

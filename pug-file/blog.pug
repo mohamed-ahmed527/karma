@@ -1,0 +1,111 @@
+doctype html 
+html(lang="en")
+  head 
+    title Blog 
+    include ../includes/head-content.pug
+    link(rel="stylesheet", href="../scss/blog.css")
+  body
+    header 
+      .container 
+        include ../includes/navbar-content.pug
+        h1(class="text") Blog Page
+        div(class="links") 
+          a(href="../index.html") Home 
+          span
+            i(class="ri-arrow-right-line") 
+          a(href="blog.html") Blog
+    //end of header
+    .middle
+      .container
+        .row
+          - for(x=1; x<=3 ; x++)
+            div(class="col-md-12 col-lg-4")
+              .box
+                img(src="../assets/blog-food.webp")
+                .text
+                  .info
+                    h4 FOOD
+                    p let the food be finished
+    //end of middle
+    .content
+      .container
+        .row
+          div(class="col-md-12 col-lg-8")
+            .left
+              - for(x=1; x<=5; x++)
+                .box
+                  .row
+                    div(class="col-sm-12 col-md-3")
+                      .blog-text
+                        p
+                          each val in ["Food ,","Technology ,","Politics ,","Lifestyle" ]
+                            a(href="") #{val}
+                        ul(class="list")
+                          li
+                            a(href="") Mark Wins 
+                              i(class="ri-user-line")
+                          li
+                            a(href="") 12 Dec, 2018
+                              i(class="ri-calendar-2-fill")
+                          li
+                            a(href="") 1.2M Views
+                              i(class="ri-eye-line")
+                          li
+                            a(href="")  06 Comments
+                              i(class="ri-chat-3-line")
+                    //blog-pic
+                    div(class="col-sm-12 col-md-9")
+                      .blog-pic
+                        .pic
+                          img(src="../assets/blog-content.webp")
+                        h4
+                          a(href="") Astronomy Binoculars A Great Alternative 
+                        p MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
+                        button
+                          a(href="") VIEW MORE 
+            //end of left
+          div(class="col-md-12 col-lg-4")
+            .bar
+              .search
+                input(type="text", placeholder="Search Posts")
+                i(class="ri-search-line")
+              .pic
+                img(src="../assets/barber.webp")
+              h4 Charlie Barber
+              p Senior blog writer
+              p
+                each val in ["ri-facebook-fill","ri-twitter-fill","ri-github-fill","ri-behance-fill"]
+                  a(href="")
+                    i(class= val) 
+              p Boot camps have its supporters andit sdetractors. Some people do not understand why you should have to spend money on boot camp when you can get. Boot camps have itssuppor ters andits detractors.
+              ul.list1
+                h4(class="title") Popular Posts
+                - for(x=1; x<=4 ; x++)
+                  .box
+                    .pic
+                      img(src="../assets/popular-posts.webp")
+                    .text
+                      h5 Space The Final Frontier
+                      p 02 Hours ago
+              ul.list2
+                h4(class="title") Post Categories
+                - for(x=1 ;x<7 ; x++)
+                    li
+                      a(href="")
+                        span Technology 
+                        span  25
+              .newsletter
+                h4(class="title") Newsletter
+                p Here, I focus on a range of items and features that we use in life without giving them a second thought.
+                .send
+                  input(type="text", placeholder="enter email")
+                  button(type="submit") Subscribe
+                p You can unsubscribe at any time
+              .tag-clouds
+                h4(class="title") Tag Clouds
+                each val in ["Technology","Fashion","Architecture","Food","Lifestyle","Adventure","Fashion","Architecture","Food","Lifestyle","Fashion","Architecture","Food","Lifestyle",]
+                  a(href="") #{val} 
+    //end of content
+    include ../includes/footer-content.pug
+
+

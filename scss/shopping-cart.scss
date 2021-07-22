@@ -1,0 +1,114 @@
+/********var colors*****/
+$primary:#222;
+$second:#ffba00;
+$dark-gray:#777;
+$light-gray:#ccc;
+$light-blue: #828bb3;
+$second-light-gray:#e8f0f2;
+/**************/
+body{
+  color: $primary;
+}
+ul, li{
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+/***********header************/
+header{
+  .container{
+    >h1.text{
+      text-align: right;
+      margin: 140px 0px;
+      margin-bottom: 50px;
+      color: white;
+      font-size: 41px;
+      font-weight: 700;
+    }
+    >div.links{
+      text-align: right;
+      color: white;
+      padding: 50px 0px;
+      a{
+        color: white;
+      }
+    }
+  }
+}
+@media (max-width: 1200px){
+  header .container > div.links,
+  header .container >h1.text{
+    text-align: left;
+  }
+  header .container > h1.text{
+    margin-bottom: 0px;
+  }
+}
+/*************end of header******/
+.container{
+  table{
+    margin: 100px 0px;
+    width: 100%;
+    tr{
+      border-bottom: 1px solid #eee;
+      th{
+        padding: 30px 0px;
+        color: $dark-gray;
+        font-family: system-ui;
+        font-size: 15px;
+        font-weight: 500;
+      }
+      td{
+        padding: 30px 0px;
+        font-family: system-ui;
+        &:first-of-type{
+          color: $dark-gray;
+        }
+        .pic{
+          display: inline-block;
+          margin-right: 15px;
+        }
+        .count{
+          position: relative;
+          width: fit-content;
+          input{
+            border: 1px solid #eee;
+            width: 70px;
+            padding: 2px 7px;
+            padding-left: 10px;
+            outline-style: none;
+            color: $primary;
+          }
+          button{
+            color: grey;
+            position: absolute;
+            background-color: transparent;
+            font-size: 16px;
+            border: 0px;
+            padding: 0px;
+            right: 0px;
+            height: 16px;
+            outline-style: none;
+          }
+          button:first-of-type{
+            top: -4px;
+            margin-bottom: 2px;
+          }
+          button:last-of-type{
+            top: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
