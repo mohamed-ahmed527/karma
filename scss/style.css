@@ -468,6 +468,7 @@ header section .row .col-sm-10 .header-img img {
 .products .splide__track {
   width: 86%;
   margin: auto;
+  height: max-content ;
 }
 
 .products .splide__arrow {
